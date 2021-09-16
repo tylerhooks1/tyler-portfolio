@@ -28,7 +28,7 @@ export default function Contact() {
   return (
     <section id="contact" className="relative">
       <div className="container px-5 py-10 mx-auto flex sm:flex-nowrap flex-wrap">
-        <div className="lg:w-2/3 md:w-1/2 bg-gray-900 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
+        <div className="hidden lg:w-2/3 md:w-1/2 md:block rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
           <iframe
             width="100%"
             height="100%"
@@ -40,8 +40,7 @@ export default function Contact() {
             style={{ filter: "opacity(0.7)" }}
             src="https://maps.google.com/maps?q=Austin,%20Texas&t=&z=13&ie=UTF8&iwloc=&output=embed"
           />
-          <div className="bg-gray-900 relative flex flex-wrap p-6 rounded shadow-md">
-
+          <div className="bg-burntorange absolute bottom-3 left-3 flex flex-wrap p-6 rounded shadow-md lg:w-1/3">
             <div className="px-4 lg:mt-0">
               <h2 className="title-font font-semibold text-white tracking-widest text-xs">
                 EMAIL
@@ -54,17 +53,17 @@ export default function Contact() {
               </h2>
               <p className="leading-relaxed">281-656-1814</p>
             </div>
-          </div>
+        </div>
         </div>
         <form
           netlify
           name="contact"
           className="lg:w-1/3 md:w-1/2 flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
-          <h2 className="text-white sm:text-4xl text-3xl mb-1 font-medium title-font">
-            Hire Me
+          <h2 className="sm:text-4xl text-3xl mb-1 font-medium title-font">
+            Let's Connect
           </h2>
           <p className="leading-relaxed mb-5">
-            I would love to learn more about any future opportunities. Please connect and let me know if you think I would be a good candidate!
+          I am currently based in the Austin, Texas area and would love to learn more about any future opportunities. 
           </p>
           <div className="relative mb-4">
             <label htmlFor="name" className="leading-7 text-sm text-gray-400">
@@ -74,7 +73,7 @@ export default function Contact() {
               type="text"
               id="name"
               name="name"
-              className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+              className="w-full bg-cream rounded border border-burntorange focus:border-burntorange focus:ring-2 focus:ring-burnorange text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
             />
           </div>
           <div className="relative mb-4">
@@ -85,7 +84,7 @@ export default function Contact() {
               type="email"
               id="email"
               name="email"
-              className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+              className="w-full bg-cream-light rounded border border-burntorange  focus:border-burntorange focus:ring-2 focus:ring-burnorange text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
             />
           </div>
           <div className="relative mb-4">
@@ -97,12 +96,12 @@ export default function Contact() {
             <textarea
               id="message"
               name="message"
-              className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+              className="w-full bg-cream-light rounded border border-burntorange  focus:border-burntorange focus:ring-2 focus:ring-burnorange h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
             />
           </div>
           <button
             type="submit"
-            className="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
+            className="border-1 bg-burntorange text-cream py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
             Submit
           </button>
         </form>
