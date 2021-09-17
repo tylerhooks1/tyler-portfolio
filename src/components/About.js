@@ -11,7 +11,7 @@ export default function About() {
           <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium">
             Hello, my name is Tyler Hooks.
             <br className="hidden lg:inline-block" /> I'm a Software Engineer
-            <br className="hidden lg:inline-block" /> with interests in React Development and UI engineering.
+            <br className="hidden lg:inline-block" /> with interests in React Development and UI Engineering.
           </h1>
           <div className="flex mb-4 items-center">
           <a href="https://www.linkedin.com/in/tyler-hooks-9214abb5" className="w-6 mr-4">
