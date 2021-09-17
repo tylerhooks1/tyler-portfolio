@@ -13,21 +13,20 @@ export default function Contact() {
       .join("&");
   }
 
-  function handleSubmit(e) {
+  const handleSubmit = (e) => {
     e.preventDefault()
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({
-        "form-name": e.target.getAtrribute("name"),
-        ...name
+        "contact": e.target.getAttribute("name"),
       })
 
     })
       .then(() => alert("Message sent!"))
       .catch((error) => alert(error))
   }
-
+  
   return (
     <section id="contact" className="relative">
       <div className="container px-5 py-10 mx-auto flex sm:flex-nowrap flex-wrap">
@@ -106,6 +105,7 @@ export default function Contact() {
           </div>
           <button
             type="submit"
+            onClick={handleSubmit}
             className="border-1 bg-burntorange text-cream py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
             Submit
           </button>
@@ -114,4 +114,6 @@ export default function Contact() {
     </section>
 
   );
+
+  
 }
