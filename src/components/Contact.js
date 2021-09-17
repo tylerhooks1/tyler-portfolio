@@ -20,6 +20,7 @@ export default function Contact() {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({
         "form-name": e.target.getAtrribute("name"),
+        ...name
       })
 
     })
@@ -42,7 +43,7 @@ export default function Contact() {
             style={{ filter: "opacity(0.7)" }}
             src="https://maps.google.com/maps?q=Austin,%20Texas&t=&z=13&ie=UTF8&iwloc=&output=embed"
           />
-          <div className="bg-burntorange absolute bottom-3 left-3 flex flex-wrap p-6 rounded shadow-md lg:w-1/3">
+          <div className="bg-burntorange absolute bottom-3 left-3 flex flex-wrap p-6 rounded shadow-md lg:w-1/2">
             <div className="px-4 lg:mt-0">
               <h2 className="title-font font-semibold text-white tracking-widest text-xs">
                 EMAIL
