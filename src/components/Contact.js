@@ -1,28 +1,28 @@
 import React from "react";
 
 export default function Contact() {
-  const [name, setName] = React.useState(""); 
-  const [email, setEmail] = React.useState(""); 
-  const [message, setMessage] = React.useState(""); 
+  // const [name, setName] = React.useState(""); 
+  // const [email, setEmail] = React.useState(""); 
+  // const [message, setMessage] = React.useState(""); 
 
-  function encode(data){
-    return Object.keys(data)
-    .map(
-      (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
-    )
-    .join("&");
-  }
+  // function encode(data){
+  //   return Object.keys(data)
+  //   .map(
+  //     (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
+  //   )
+  //   .join("&");
+  // }
 
-  function handleSubmit(e){
-    e.preventDefault();
-    fetch("/", {
-      method: "POST",
-      headers: {"Content-Type": "application/x-www-form-urlencoded"}, 
-      body: encode({"form-name": "contact", name, email, message}), 
-    })
-    .then(() => alert("Message sent!"))
-    .catch((error) => alert(error));
-  }
+  // function handleSubmit(e){
+  //   e.preventDefault();
+  //   fetch("/", {
+  //     method: "POST",
+  //     headers: {"Content-Type": "application/x-www-form-urlencoded"}, 
+  //     body: encode({"form-name": "contact", name, email, message}), 
+  //   })
+  //   .then(() => alert("Message sent!"))
+  //   .catch((error) => alert(error));
+  // }
 
   
   return (
@@ -56,9 +56,11 @@ export default function Contact() {
         </div>
         </div>
         <form
-          netlify
           name="contact"
+          method="POST"
+          data-netlify="true"
           className="xl:w-2/5 lg:w-1/3 md:w-1/2 flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
+            <input type="hidden" name="form-name" value="hiddenInput" />
           <h2 className="sm:text-4xl text-3xl mb-1 font-medium title-font">
             Let's Connect
           </h2>
