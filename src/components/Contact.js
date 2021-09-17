@@ -5,26 +5,28 @@ export default function Contact() {
   // const [email, setEmail] = React.useState(""); 
   // const [message, setMessage] = React.useState(""); 
 
-  // function encode(data){
-  //   return Object.keys(data)
-  //   .map(
-  //     (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
-  //   )
-  //   .join("&");
-  // }
+  function encode(data) {
+    return Object.keys(data)
+      .map(
+        (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
+      )
+      .join("&");
+  }
 
-  // function handleSubmit(e){
-  //   e.preventDefault();
-  //   fetch("/", {
-  //     method: "POST",
-  //     headers: {"Content-Type": "application/x-www-form-urlencoded"}, 
-  //     body: encode({"form-name": "contact", name, email, message}), 
-  //   })
-  //   .then(() => alert("Message sent!"))
-  //   .catch((error) => alert(error));
-  // }
+  function handleSubmit(e) {
+    e.preventDefault()
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({
+        "form-name": e.target.getAtrribute("name"),
+      })
 
-  
+    })
+      .then(() => alert("Message sent!"))
+      .catch((error) => alert(error))
+  }
+
   return (
     <section id="contact" className="relative">
       <div className="container px-5 py-10 mx-auto flex sm:flex-nowrap flex-wrap">
@@ -53,22 +55,22 @@ export default function Contact() {
               </h2>
               <p className="leading-relaxed">281-656-1814</p>
             </div>
-        </div>
+          </div>
         </div>
         <form
           name="contact"
           method="POST"
           data-netlify="true"
           className="xl:w-2/5 lg:w-1/3 md:w-1/2 flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
-            <input type="hidden" name="form-name" value="hiddenInput" />
+          <input type="hidden" name="form-name" value="contact" />
           <h2 className="sm:text-4xl text-3xl mb-1 font-medium title-font">
             Let's Connect
           </h2>
           <p className="leading-relaxed mb-5">
-          I am currently based in the Austin, Texas area and would love to learn more about any future opportunities. 
+            I am currently based in the Austin, Texas area and would love to learn more about any future opportunities.
           </p>
           <div className="relative mb-4">
-            <label htmlFor="name" className="leading-7 text-sm text-gray-400">
+            <label htmlFor="name" className="leading-7 text-sm">
               Name
             </label>
             <input
@@ -79,7 +81,7 @@ export default function Contact() {
             />
           </div>
           <div className="relative mb-4">
-            <label htmlFor="email" className="leading-7 text-sm text-gray-400">
+            <label htmlFor="email" className="leading-7 text-sm">
               Email
             </label>
             <input
@@ -92,7 +94,7 @@ export default function Contact() {
           <div className="relative mb-4">
             <label
               htmlFor="message"
-              className="leading-7 text-sm text-gray-400">
+              className="leading-7 text-sm">
               Message
             </label>
             <textarea
@@ -109,7 +111,6 @@ export default function Contact() {
         </form>
       </div>
     </section>
-
 
   );
 }
