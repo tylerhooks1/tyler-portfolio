@@ -1,9 +1,9 @@
 import React from "react";
 
 export default function Contact() {
-  // const [name, setName] = React.useState(""); 
-  // const [email, setEmail] = React.useState(""); 
-  // const [message, setMessage] = React.useState(""); 
+  const [name, setName] = React.useState(""); 
+  const [email, setEmail] = React.useState(""); 
+  const [message, setMessage] = React.useState(""); 
 
   function encode(data) {
     return Object.keys(data)
@@ -14,17 +14,14 @@ export default function Contact() {
   }
 
   const handleSubmit = (e) => {
-    e.preventDefault()
+    e.preventDefault();
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({
-        "contact": e.target.getAttribute("name"),
-      })
-
+      body: encode({ "form-name": "contact", name, email, message }),
     })
       .then(() => alert("Message sent!"))
-      .catch((error) => alert(error))
+      .catch((error) => alert(error));
   }
   
   return (
@@ -60,9 +57,9 @@ export default function Contact() {
         <form
           name="contact"
           method="POST"
-          data-netlify="true"
+          netlify 
+          onSubmit = {handleSubmit}
           className="xl:w-2/5 lg:w-1/3 md:w-1/2 flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
-          <input type="hidden" name="contact" value="contact" />
           <h2 className="sm:text-4xl text-3xl mb-1 font-medium title-font">
             Let's Connect
           </h2>
@@ -78,6 +75,7 @@ export default function Contact() {
               id="name"
               name="name"
               className="w-full bg-cream rounded border border-burntorange focus:border-burntorange focus:ring-2 focus:ring-burnorange text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+              onChange={e => setName(e.target.value)}
             />
           </div>
           <div className="relative mb-4">
@@ -89,6 +87,7 @@ export default function Contact() {
               id="email"
               name="email"
               className="w-full bg-cream-light rounded border border-burntorange  focus:border-burntorange focus:ring-2 focus:ring-burnorange text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+              onChange={e => setName(e.target.value)}
             />
           </div>
           <div className="relative mb-4">
@@ -101,6 +100,7 @@ export default function Contact() {
               id="message"
               name="message"
               className="w-full bg-cream-light rounded border border-burntorange  focus:border-burntorange focus:ring-2 focus:ring-burnorange h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+              onChange={e => setName(e.target.value)}
             />
           </div>
           <button
