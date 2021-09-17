@@ -26,14 +26,14 @@ export default function About() {
           </a>
           </div>
           <p className="mb-8 leading-relaxed mb-2">
-            I have over 2 years of experience with JavaScript frameworks and applications, web development, and the server-side languages Java and .NET.
+            I have over 2 years of experience with JavaScript frameworks and applications, web development, Java and .NET.
             In my current role, I manage a UI component library that has resulted in an increase in compatibility, accessibility, and efficiency of hundreds of projects in production.
             Additionally, I have collaborated with UX designers to develop components and build out front-end applications across my organization. 
           </p>
 
           <h2 className="text-xl font-medium">About this portfolio </h2>
           <p className="mb-8 leading-relaxed">
-            This portfolio site was implemented using React.js,Tailwind CSS for styling, and deployed with Netlify. <br />
+            This portfolio site was implemented using React.js, Tailwind CSS, and deployed with Netlify. <br />
             Please checkout the <span><a class="text-burntorange" href="#">Git repository</a></span> for more information.
             In time, I plan on adding more projects to this site and can't wait to share what I've learned and the many things I'm passionate about!
           </p>
