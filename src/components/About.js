@@ -34,7 +34,7 @@ export default function About() {
           <h2 className="text-xl font-medium">About this portfolio </h2>
           <p className="mb-8 leading-relaxed">
             This portfolio site was implemented using React.js, Tailwind CSS, and deployed with Netlify. <br />
-            Please checkout the <span><a class="text-burntorange" href="#">Git repository</a></span> for more information.
+            Please checkout the <span><a class="text-burntorange" href="https://github.com/tylerhooks1/tyler-portfolio">Git repository</a></span> for more information.
             In time, I plan on adding more projects to this site and can't wait to share what I've learned and the many things I'm passionate about!
           </p>
           <div className="flex justify-center mb-7">
