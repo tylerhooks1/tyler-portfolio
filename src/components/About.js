@@ -13,13 +13,13 @@ export default function About() {
             <br className="hidden lg:inline-block" /> I'm a Software Engineer
             <br className="hidden lg:inline-block" /> with interests in React Development and UI Engineering.
           </h1>
-          <div className="flex mb-4 items-center">
-          <a href="https://www.linkedin.com/in/tyler-hooks-9214abb5" className="w-6 mr-4">
+          <div className="flex mb-4 items-center" rel="noreferrer noopener">
+          <a href="https://www.linkedin.com/in/tyler-hooks-9214abb5" target="_blank" className="w-6 mr-4">
             <img
               src={Linkedin}
             />
           </a>
-          <a href="https://github.com/tylerhooks1" className="w-6">
+          <a href="https://github.com/tylerhooks1" target="_blank"  className="w-6">
             <img
               src={Github}
             />
