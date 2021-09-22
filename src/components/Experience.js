@@ -7,7 +7,7 @@ export default function Experience() {
     return (
         <section id="experience">
             <div className="container px-10 py-10 mx-auto text-center">
-                <div className="flex flex-col w-full mb-20">
+                <div className="flex flex-col w-full mt-8 mb-20">
                     <BriefcaseIcon className="mx-auto inline-block w-10 mb-4 text-burntorange" />
                     <h1 className="sm:text-4xl text-3xl font-medium title-font mb-6">
                         Work Experience
