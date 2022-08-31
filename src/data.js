@@ -35,7 +35,7 @@ export const experience = [
   {
     company: "Dell Technologies",
     role: "Software Engineer",
-    date: "August 2019 - Present",
+    date: "August 2019 - December 2021",
     description:
       <div className="text-left mb-8" >
         <ul className="list-disc mb-5">

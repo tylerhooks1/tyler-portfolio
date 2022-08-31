@@ -1,15 +1,15 @@
-import React from "react"; 
-import About from "./components/About"; 
-import Contact from "./components/Contact"; 
-import Navbar from "./components/Navbar"; 
+import React from "react";
+import About from "./components/About";
+import Contact from "./components/Contact";
+import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
-import Skills from "./components/Skills"; 
-import Experience from "./components/Experience"; 
+import Skills from "./components/Skills";
+import Experience from "./components/Experience";
 
 
 function App() {
   return (
-    <main className="bg-cream text-gray-400 body-font">
+    <main className="text-black dark:text-white body-font">
       <Navbar />
       <About />
       <Experience />

@@ -5,7 +5,7 @@ import Github from "../photos/github.svg";
 
 export default function About() {
   return (
-    <section className="my-20" id="about">
+    <section className="my-20 transition-all ease-in-out dark:transition-all ease-in-out" id="about">
       <div className="container mx-auto px-10 mx-10 lg:pb-20 flex items-center justify-between">
         <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-12 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
           <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium">
@@ -14,21 +14,22 @@ export default function About() {
             <br className="hidden lg:inline-block" /> with interests in React Development and UI Engineering.
           </h1>
           <div className="flex mb-4 items-center" rel="noreferrer noopener">
-          <a href="https://www.linkedin.com/in/tyler-hooks-9214abb5" target="_blank" className="w-6 mr-4">
-            <img
-              src={Linkedin}
-            />
-          </a>
-          <a href="https://github.com/tylerhooks1" target="_blank"  className="w-6">
-            <img
-              src={Github}
-            />
-          </a>
+            <a href="https://www.linkedin.com/in/tyler-hooks-9214abb5" target="_blank" className="w-6 mr-4" rel="noreferrer">
+              <img
+                src={Linkedin}
+                alt="LinkedIn Link"
+              />
+            </a>
+            <a href="https://github.com/tylerhooks1" target="_blank" className="w-6" rel="noreferrer">
+              <img
+                src={Github}
+              />
+            </a>
           </div>
           <p className="mb-8 leading-relaxed mb-2">
             I have over 2 years of experience with JavaScript frameworks and applications, web development, Java and .NET.
             In my current role, I manage a UI component library that has resulted in an increase in compatibility, accessibility, and efficiency of hundreds of projects in production.
-            Additionally, I have collaborated with UX designers to develop components and build out front-end applications across my organization. 
+            Additionally, I have collaborated with UX designers to develop components and build out front-end applications across my organization.
           </p>
 
           <h2 className="text-xl font-medium">About this portfolio </h2>

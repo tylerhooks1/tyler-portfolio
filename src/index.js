@@ -2,11 +2,19 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import { ThemeProvider } from './components/themeContext'
+
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <ThemeProvider>
+      <body className="bg-white dark:bg-black">
+        <main className="transition ease-in-out">
+          <App />
+        </main>
+      </body>
+    </ThemeProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
