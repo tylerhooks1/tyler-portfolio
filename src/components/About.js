@@ -1,14 +1,13 @@
 import React from "react";
 import TypeIt from "typeit-react"
 import Profile from "../photos/profile.jpg"
-import LinkedIn from "../photos/linkedin.svg"
-import GitHub from "../photos/github.svg"
+
 
 export default function About() {
   return (
     <section className="container mt-10  bg-white dark:bg-gray-800 font-Roboto flex" id="about">
       <div className="container items-center text-center mx-auto px-10 mx-10 lg:pb-20  md:grid md:grid-cols-2 md:place-content-between md:h-48 md:text-left flex justify-items-center md-7">
-        <div>
+        <div className=" lg:ml-6 xl:ml-8 ">
           <h1 className="md:text-3xl font-bold grid-cols-2 ">Hi, I'm Tyler Hooks! I'm a <br className='inline-block lg:hidden ' />
             <TypeIt className='text-lime-600 dark:text-lime-200' options={{ loop: true }} getBeforeInit={(instance) => {
               instance
@@ -24,7 +23,7 @@ export default function About() {
               return instance;
             }} />
           </h1>
-          <p className="grid-cols-4 font-light">
+          <p className="grid-cols-2 font-light">
             I have over 3 years of experience with JavaScript frameworks and applications and web development
             In my current role, I manage a UI component library that has resulted in an increase in compatibility, accessibility, and efficiency of hundreds of projects in production.
             Additionally, I have collaborated with UX designers to develop components and build out front-end applications across my organization.
