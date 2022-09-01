@@ -18,7 +18,7 @@ export default function Experience() {
                             <div className="mt-0.5 ml-4 mb-6">
                                 <h4 className="text-white font-semibold text-xl mb-1.5">{experience.role}</h4>
                                 <h4 classsName="text-white font-semibold text-xl mb-1.5">{experience.company}</h4>
-                                <p classsName="text-white mb-3 font-light">{experience.description}</p>
+                                <p classsName="text-white mb-3 font-light text-base">{experience.description}</p>
                             </div>
                         </li>
                     ))}
