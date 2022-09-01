@@ -24,8 +24,8 @@ export const skills = [
   "HTML/CSS",
   "JavaScript",
   "ReactJS",
-  ".Net",
-  "Bootstrap",
+  "SASS",
+  "MongoDB",
   "Node.js",
   "C++",
   "Java"

@@ -13,7 +13,7 @@ export default function Experience() {
                         <li>
                             <div className="flex flex-start items-center pt-2">
                                 <div className="bg-lime-600 dark:bg-lime-200 w-2 h-2 rounded-full -ml-1 mr-3"></div>
-                                <p className="text-white text-sm">{experience.date}</p>
+                                <p className="text-lime-600 dark:text-lime-200 text-sm">{experience.date}</p>
                             </div>
                             <div className="mt-0.5 ml-4 mb-6">
                                 <h4 className="text-white font-semibold text-xl mb-1.5">{experience.role}</h4>
@@ -26,7 +26,7 @@ export default function Experience() {
                 <button
                     href={Resume}
                     target="_blank"
-                    className="inline-flex  border py-2 px-6 focus:outline-none rounded text-lg text-center">
+                    className="inline-flex border-2 text-lime-600 dark:text-lime-200 border-lime-600 dark:border-lime-200 py-2 px-6 focus:outline-none rounded text-lg text-center">
                     Resume
                 </button>
             </div>
