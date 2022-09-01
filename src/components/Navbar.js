@@ -4,7 +4,7 @@ import Toggle from './Toggle';
 export default function Navbar() {
   return (
     <header className=" md:sticky top-0 z-10  dark:bg-gray-800">
-      <div className="container mx-auto flex flex-col md:flex-row items-center ">
+      <div className="container mx-auto flex flex-col md:flex-row lg:justify-between">
         <nav className="md:ml-4 md:py-1 md:pl-4 flex flex-col md:flex-row items-center text-base justify-center  text-black dark:text-white">
           <a href="#experience" className="md:mr-5 hover:text-burntorange">
             Experience
@@ -22,7 +22,7 @@ export default function Navbar() {
 
           </a>
         </nav>
-        <Toggle className="align" />
+        <Toggle />
       </div>
     </header>
   );

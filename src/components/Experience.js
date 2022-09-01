@@ -1,7 +1,7 @@
 import React from "react";
 import { experience } from "../data";
 import Resume from "../documents/Tyler_Hooks_Resume.pdf";
-import { BriefcaseIcon, CodeIcon } from "@heroicons/react/solid";
+
 
 export default function Experience() {
     return (
