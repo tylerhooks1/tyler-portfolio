@@ -9,7 +9,7 @@ export default function About() {
     <section className="container mt-10  bg-white dark:bg-gray-800 font-Roboto flex" id="about">
       <div className="container items-center text-center mx-auto px-10 mx-10 lg:pb-20  md:grid md:grid-cols-2 md:place-content-between md:h-48 md:text-left flex justify-items-center md-7">
         <div>
-          <h1 className="text-3xl font-bold grid-cols-2 ">Hi, I'm Tyler Hooks! I'm a <br className='inline-block lg:hidden ' />
+          <h1 className="md:text-3xl font-bold grid-cols-2 ">Hi, I'm Tyler Hooks! I'm a <br className='inline-block lg:hidden ' />
             <TypeIt className='text-lime-600 dark:text-lime-200' options={{ loop: true }} getBeforeInit={(instance) => {
               instance
                 .type('developer.')
@@ -20,7 +20,7 @@ export default function About() {
                 .pause(750)
                 .delete(9)
                 .pause(500)
-                .type('Lego Enthusiast :)')
+                .type('Lego enthusiast :)')
               return instance;
             }} />
           </h1>
@@ -29,7 +29,7 @@ export default function About() {
             In my current role, I manage a UI component library that has resulted in an increase in compatibility, accessibility, and efficiency of hundreds of projects in production.
             Additionally, I have collaborated with UX designers to develop components and build out front-end applications across my organization.
           </p>
-          <div className="flex mt-3 mb-4 items-center" rel="noreferrer noopener">
+          <div className="flex mt-3 mb-4 justify-center md:justify-start" rel="noreferrer noopener">
             <a href="https://www.linkedin.com/in/tyler-hooks-9214abb5" target="_blank" className="w-6 mr-4" rel="noreferrer">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" /></svg>
             </a>
@@ -45,57 +45,6 @@ export default function About() {
             alt=""
           />
         </div>
-        {/* <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-12 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-          <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium">
-            Hello, my name is Tyler Hooks.
-            <br className="hidden lg:inline-block" /> I'm a Software Engineer
-            <br className="hidden lg:inline-block" /> with interests in React Development and UI Engineering.
-          </h1>
-          <div className="flex mb-4 items-center" rel="noreferrer noopener">
-            <a href="https://www.linkedin.com/in/tyler-hooks-9214abb5" target="_blank" className="w-6 mr-4" rel="noreferrer">
-              <img
-                src={Linkedin}
-                alt="LinkedIn Link"
-              />
-            </a>
-            <a href="https://github.com/tylerhooks1" target="_blank" className="w-6" rel="noreferrer">
-              <img
-                src={Github}
-                alt="GitHub Link"
-              />
-            </a>
-          </div>
-          <p className="mb-8 leading-relaxed mb-2">
-            I have over 3 years of experience with JavaScript frameworks and applications, web development, Java and .NET.
-            In my current role, I manage a UI component library that has resulted in an increase in compatibility, accessibility, and efficiency of hundreds of projects in production.
-            Additionally, I have collaborated with UX designers to develop components and build out front-end applications across my organization.
-          </p>
-
-          <h2 className="text-xl font-medium">About this portfolio </h2>
-          <p className="mb-8 leading-relaxed">
-            This portfolio site was implemented using React.js, Tailwind CSS, and deployed with Netlify. <br />
-            Please checkout the <span><a class="text-burntorange" href="https://github.com/tylerhooks1/tyler-portfolio" target="_blank">Git repository</a></span> for more information.
-            In time, I plan on adding more projects to this site and can't wait to share what I've learned and the many things I'm passionate about!
-          </p>
-          <div className="flex justify-center mb-7">
-            <a
-              href="#contact"
-              className="inline-flex text-cream bg-burntorange border-1 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg text-center">
-              Work With Me
-            </a>
-            <a
-              href="#projects"
-              className="ml-4 inline-flex text-gray-400 bg-gray-800 border-2 border-burntorange py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg text-center">
-              See Projects
-            </a>
-          </div>
-        </div>
-        <div className="hidden md:block xl:max-w-xl xl:w-full md:w-1/2 w-5/6">
-          <img
-            src={Hero}
-          />
-        </div> */}
-
       </div >
     </section >
   );
