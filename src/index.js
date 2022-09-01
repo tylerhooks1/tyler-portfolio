@@ -10,7 +10,7 @@ ReactDOM.render(
   <React.StrictMode>
     <ThemeProvider>
       <body className="bg-white dark:bg-black">
-        <main className="transition ease-in-out">
+        <main>
           <App />
         </main>
       </body>
