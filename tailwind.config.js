@@ -5,7 +5,12 @@ module.exports = {
   ],
   darkMode: 'class',
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        Playfair: ['Playfiar Display', 'serif'],
+        Roboto: ['Roboto Condensed', 'sans-serif']
+      }
+    },
   },
   plugins: [],
 }

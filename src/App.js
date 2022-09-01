@@ -7,7 +7,7 @@ import Skills from "./components/Skills";
 import Experience from "./components/Experience";
 function App() {
   return (
-    <main className="text-black dark:text-white body-font">
+    <main className="p-6 text-black dark:text-white body-font">
       <Navbar />
       <About />
       <Experience />
