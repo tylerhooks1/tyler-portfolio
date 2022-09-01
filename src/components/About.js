@@ -7,7 +7,7 @@ export default function About() {
   return (
     <section className="my-20 transition-all ease-in-out dark:transition-all ease-in-out bg-white dark:bg-gray-800" id="about">
       <div className="container mx-auto px-10 mx-10 lg:pb-20 flex items-center justify-between">
-        <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-12 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+        {/* <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-12 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
           <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium">
             Hello, my name is Tyler Hooks.
             <br className="hidden lg:inline-block" /> I'm a Software Engineer
@@ -56,7 +56,7 @@ export default function About() {
           <img
             src={Hero}
           />
-        </div>
+        </div> */}
 
       </div>
     </section>

@@ -1,9 +1,9 @@
 import React from "react";
 
 export default function Contact() {
-  const [name, setName] = React.useState(""); 
-  const [email, setEmail] = React.useState(""); 
-  const [message, setMessage] = React.useState(""); 
+  const [name, setName] = React.useState("");
+  const [email, setEmail] = React.useState("");
+  const [message, setMessage] = React.useState("");
 
   function encode(data) {
     return Object.keys(data)
@@ -23,10 +23,10 @@ export default function Contact() {
       .then(() => alert("Message sent!"))
       .catch((error) => alert(error));
   }
-  
+
   return (
     <section id="contact" className="relative">
-      <div className="container px-5 py-10 mx-auto flex sm:flex-nowrap flex-wrap">
+      {/* <div className="container px-5 py-10 mx-auto flex sm:flex-nowrap flex-wrap">
         <div className="hidden lg:w-2/3 md:w-1/2 md:block rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
           <iframe
             width="100%"
@@ -109,10 +109,10 @@ export default function Contact() {
             Submit
           </button>
         </form>
-      </div>
+      </div> */}
     </section>
 
   );
 
-  
+
 }
