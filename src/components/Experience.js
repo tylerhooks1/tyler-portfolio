@@ -6,7 +6,7 @@ export default function Experience() {
     return (
         <section id="experience" className="font-Roboto pt-48 mt-10">
             <div className="container px-10 py-10 mx-auto ">
-                <h1 className="transition-all text-2xl ">Work Experience</h1>
+                <h1 className="text-2xl ">Work Experience</h1>
                 <ol className="border-l border-lime-600 dark:border-lime-200">
                     {experience.map((experience) => (
                         <li>
@@ -15,9 +15,9 @@ export default function Experience() {
                                 <p className="text-lime-600 dark:text-lime-200 text-sm">{experience.date}</p>
                             </div>
                             <div className="mt-0.5 ml-4 mb-6">
-                                <h4 className="text-white font-semibold text-xl mb-1.5">{experience.role}</h4>
-                                <h4 classsName="text-white font-semibold text-xl mb-1.5">{experience.company}</h4>
-                                <p classsName="text-white mb-3 font-light text-base">{experience.description}</p>
+                                <h4 className="dark:text-white text-black font-semibold text-xl mb-1.5">{experience.role}</h4>
+                                <h4 classsName="dark:text-white text-black font-semibold text-xl mb-1.5">{experience.company}</h4>
+                                <p classsName="dark:text-white text-black mb-3 font-light text-base">{experience.description}</p>
                             </div>
                         </li>
                     ))}
