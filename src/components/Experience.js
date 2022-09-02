@@ -1,9 +1,8 @@
 import { experience } from "../data";
-import Resume from "../documents/Tyler_Hooks_Resume.pdf";
+import Resume from "../documents/TylerHooks_Resume.pdf";
 
 
 export default function Experience() {
-
     return (
         <section id="experience" className="font-Roboto pt-48 mt-10">
             <div className="container px-10 py-10 mx-auto ">
@@ -23,12 +22,12 @@ export default function Experience() {
                         </li>
                     ))}
                 </ol>
-                <button
+                <a
                     href={Resume}
                     target="_blank"
-                    className="inline-flex border-2 text-lime-600 dark:text-lime-200 border-lime-600 dark:border-lime-200 py-2 px-6 focus:outline-none rounded text-lg text-center">
+                    className="inline-flex border-2 text-lime-600 dark:text-lime-200 border-lime-600 dark:border-lime-200 py-2 px-6 focus:outline-none rounded text-lg text-center" rel="noreferrer">
                     Resume
-                </button>
+                </a>
             </div>
         </section>
     )
