@@ -5,10 +5,10 @@ import Profile from "../photos/profile.jpg"
 
 export default function About() {
   return (
-    <section className="container mt-10  bg-white dark:bg-gray-800 font-Roboto flex" id="about">
+    <section className=" mt-10  bg-white dark:bg-gray-800 font-Roboto flex" id="about">
       <div className="container items-center text-center mx-auto px-10 mx-10 lg:pb-20  md:grid md:grid-cols-2 md:place-content-between md:h-48 md:text-left flex justify-items-center md-7">
-        <div className=" lg:ml-6 xl:ml-8 ">
-          <h1 className="md:text-3xl font-bold grid-cols-2 ">Hi, I'm Tyler Hooks! I'm a <br className='inline-block lg:hidden ' />
+        <div className="lg:ml-28 xl:ml-8 ">
+          <h1 className="md:text-3xl font-bold grid-cols-2 ">Hi, I'm Tyler Hooks! I'm a <br className='inline-block xl:hidden ' />
             <TypeIt className='text-lime-600 dark:text-lime-200' options={{ loop: true }} getBeforeInit={(instance) => {
               instance
                 .type('developer.')
@@ -36,7 +36,7 @@ export default function About() {
             </a>
           </div>
         </div>
-        <div className="hidden md:block xl:max-w-xl md:w-1/2 w-5/6 justify-items-center">
+        <div className="hidden md:block w-5/6 xl:w-3/5 justify-items-center">
           <img
             src={Profile}
             className="rounded-lg"

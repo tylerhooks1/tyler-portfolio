@@ -43,7 +43,7 @@ export const experience = [
           <li>Build and maintain UX component library based on DMED design language</li>
           <li>Contribute to Next.js and other front-end applications</li>
           <li>Work on modern tech stack using JavaScript, ReactJS, and Amazon Web Services</li>
-          <li>Leverage and develop icon sets, color schemes, and visual design to enhance experience across enterprise products</li>
+          <li>Leverage and develop icon sets, color schemes, and visual design to enhance <br /> experience across enterprise products</li>
           <li>Present prototype progress and ideas to partners and stakeholders</li>
         </ul>
         <p className="font-medium">Key Achievements</p>
@@ -59,9 +59,9 @@ export const experience = [
     description:
       <div className="text-left mb-8" >
         <ul className="list-disc mb-5">
-          <li>Develop and manage a UI library for reusable components resulting in an increase in compatibility, accessibility, and efficiency of hundreds of projects in production across the IT Services organization</li>
+          <li>Develop and manage a UI library for reusable components resulting in an increase in <br /> compatibility, accessibility, and efficiency of hundreds of projects in <br /> production across the IT Services organization</li>
           <li>Contribute to developing front-end IT Services website architecture</li>
-          <li>Workclosely with UX designers to develop components and user interactions to ensure responsiveness and cross-platform optimization for mobile viewing</li>
+          <li>Workclosely with UX designers to develop components and user interactions to ensure <br /> responsiveness and cross-platform optimization for mobile viewing</li>
           <li>Participate and support the IT Development Program as a subcommittee and global council member</li>
           <li>Mentor interns and new hires</li>
         </ul>
@@ -82,7 +82,7 @@ export const experience = [
           <li>Using Google Data studio to monitor data and create daily analytics report</li>
           <li>IOS and Android app testing for applications used during the festival</li>
           <li>ChatBot testing on Abby Bot through IOS and Android app and Facebook Messengers</li>
-          <li>Conducting event technology research and created a newsletter for news on the latest tech trends in AI, Chat Bots, and more</li>
+          <li>Conducting event technology research and created a newsletter for news on the latest tech trends in<br />  AI, Chat Bots, and more</li>
         </ul>
       </div>,
   }
