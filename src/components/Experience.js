@@ -5,7 +5,7 @@ import Resume from "../documents/TylerHooks_Resume.pdf";
 export default function Experience() {
     return (
         <section id="experience" className="font-Roboto pt-48 mt-10">
-            <div className="container px-10 py-10 mx-auto ">
+            <div className="container md:px-10 md:py-10 mx-auto ">
                 <h1 className="text-2xl ">Work Experience</h1>
                 <ol className="border-l border-lime-600 dark:border-lime-200">
                     {experience.map((experience) => (
